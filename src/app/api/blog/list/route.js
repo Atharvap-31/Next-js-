@@ -1,4 +1,4 @@
-export async function POST(request) {
+async function POST(request) {
   const body = await request.json();
 
   return new Response(JSON.stringify({ message: "Success", data: body }), {
@@ -6,5 +6,3 @@ export async function POST(request) {
     headers: { "Content-Type": "application/json" },
   });
 }
-
-

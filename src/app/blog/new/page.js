@@ -20,9 +20,9 @@ const Page = () => {
 
       const data = await res.json();
       console.log(data);
-    } catch (error) {}
-
-    console.log(newPost);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
