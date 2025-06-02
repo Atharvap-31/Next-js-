@@ -9,7 +9,6 @@ export default function PostForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-
     const res = await fetch(JSON_ULR, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
