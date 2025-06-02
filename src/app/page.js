@@ -1,5 +1,6 @@
 
 import Link from "next/link";
+import Loading from "./loading";
 
 export const metadata = {
   title: "Atharva Patil - Frontend Developer",
@@ -15,6 +16,7 @@ export const metadata = {
 export default function Home() {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center bg-white dark:bg-gray-900 text-gray-800 dark:text-white px-4">
+     
       <h1 className="text-4xl sm:text-5xl font-extrabold text-center mb-4">
         Hi, I'm <span className="text-purple-600">Atharva Patil</span>
       </h1>

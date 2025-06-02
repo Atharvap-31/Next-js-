@@ -4,6 +4,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import BlogCard from "../components/BlogCard";
 import EditPage from "./edit/[id]/page";
+import { getPosts } from "../utils/api";
 
 // export const metadata = {
 //   title: "Blog Page",
@@ -23,8 +24,7 @@ const Page = ({ params }) => {
 
     const fetchPost = async () => {
       try {
-        const res = await fetch("https://jsonplaceholder.typicode.com/posts");
-        const data = await res.json();
+        const data = await getPosts();
 
         if (!didCancel) {
           setPost(data);

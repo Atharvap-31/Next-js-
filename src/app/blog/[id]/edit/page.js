@@ -1,5 +1,6 @@
 "use client";
 
+import Loading from "@/app/loading";
 import { useParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
@@ -36,7 +37,9 @@ const Page = () => {
     alert("Post updated!");
   };
 
-  if (loading) return <p className="p-6">Loading post...</p>;
+  if (loading) return <p className="p-6">
+    <Loading />
+  </p>;
 
   return (
     <form onSubmit={handleSubmit} className="p-6 space-y-4">

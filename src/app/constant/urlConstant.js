@@ -1,0 +1,1 @@
+export const JSON_ULR = 'https://jsonplaceholder.typicode.com/posts'

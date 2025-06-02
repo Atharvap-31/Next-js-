@@ -1,4 +1,6 @@
 "use client";
+import { JSON_ULR } from "@/app/constant/urlConstant";
+import { getPosts } from "@/app/utils/api";
 import { useState } from "react";
 
 export default function PostForm() {
@@ -7,7 +9,8 @@ export default function PostForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
+
+    const res = await fetch(JSON_ULR, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
