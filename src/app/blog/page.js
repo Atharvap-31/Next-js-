@@ -60,6 +60,7 @@ const Page = ({ params }) => {
           >
             <BlogCard
               title={item.title}
+              body={item.body}
               index={item.id}
               handleDelete={handleDelete}
             />

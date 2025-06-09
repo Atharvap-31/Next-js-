@@ -1,6 +1,5 @@
 "use client";
 
-import { data } from "autoprefixer";
 import React from "react";
 import { useForm } from "react-hook-form";
 

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 
-const BlogCard = ({ title, index, handleDelete }) => {
+const BlogCard = ({ title, index, handleDelete, body }) => {
   const [count, setCounter] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
 
